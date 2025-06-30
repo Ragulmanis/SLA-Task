@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://127.0.0.1:5500/Day2_list.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>List of the Table</h1>
+    <!-- Unordered list Table-->
+    <ul>
+        <h3>Unordered List Table</h3>
+        <li>Personal Data 
+        <table border="1">
+<tbody><tr>
+    <th>Name</th>
+    <th>Course</th>
+</tr>
+<tr>
+    <td>Ragul</td>
+    <td>JFS</td>
+</tr>
+<tr>
+    <td>Dinesh</td>
+    <td>JFS</td>
+</tr>
+        </tbody></table>
+      </li>
+    <li>Education
+        <table border="1">
+
+            <tbody><tr>
+                <th>Name </th>
+                <th>Degree</th>
+                <th>Percentage</th>
+            </tr>
+            <tr>
+                <td>Ragul</td>
+                <td>BE CSE</td>
+                <td>82%</td>
+            </tr>
+            <tr>
+            <td>Dinesh</td>   
+            <td>BE CSE</td>
+            <td>80%</td>
+            </tr>
+  </tbody></table> 
+     </li>  
+ </ul>
+    <!-- Ordered list Table -->
+     <ol>
+        <h3>Ordered List Table </h3>
+        <li>Fruits Data 
+        <table border="1">
+            <tbody><tr>
+                <th>F Name</th>
+                <th>F Quantity</th>
+                <th>F Price</th>
+            </tr>
+            <tr>
+                <td>Apple</td>
+                <td>1 Kg</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>Mango</td>
+                <td>1 Kg</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Orange</td>
+                <td>1 Kg</td>
+                <td>50</td>
+            </tr>
+           
+
+        </tbody></table>
+        </li><li>Vegetables Data</li>
+        <table border="2">
+            <tbody><tr>
+                <th>V Name</th>
+                <th>V Quantity</th>
+                <th>V Price</th>
+            </tr>
+            <tr>
+                <td>Carrot </td>
+                <td>1 Kg</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>Beans</td>
+                <td>1 Kg</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Brimjal</td>
+                <td>1 Kg</td>
+                <td>40</td>
+            </tr>
+
+
+        </tbody></table>
+     </ol>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
