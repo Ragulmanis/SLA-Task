@@ -1,0 +1,91 @@
+// html for grid task 3
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="youtubeGridstyle.css">
+  
+</head>
+<body>
+<div class="container">
+    <div class="content">
+        <div class="nav">Nav</div>
+        <div class="header">Header</div>
+        <div class="article">Article</div>
+        <div class="ads">Ads</div>
+        <div class="footer">Footer</div>
+    </div>
+</div>
+</body>
+</html>
+
+// css for grid task 3
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+.content {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 100px 1fr 80px 80px;
+    grid-template-areas:
+        "nav header"
+        "nav article"
+        "nav ads"
+        "nav footer";
+    gap: 20px;
+    width: 80vw;
+    max-width: 1200px;
+    min-height: 80vh;
+    background: none;
+}
+.nav {
+    grid-area: nav;
+    background: yellowgreen;
+    font-size: 1.2rem;
+    padding: 10px;
+    display: flex;
+    align-items: grid-start;
+}
+.header {
+    grid-area: header;
+    background: yellowgreen;
+    font-size: 1.2rem;
+    padding: 10px;
+    display: flex;
+    align-items:grid-start;
+}
+.article {
+    grid-area: article;
+    background: yellowgreen;
+    font-size: 1.2rem;
+    padding: 10px;
+    display: grid;
+    align-items: grid-start;
+}
+.ads {
+    grid-area: ads;
+    background: yellowgreen;
+    font-size: 1.2rem;
+    padding: 10px;
+    display: flex;
+    align-items: grid-start;
+}
+.footer {
+    grid-area: footer;
+    background: yellowgreen;
+    font-size: 1.2rem;
+    padding: 10px;
+    display: grid;
+    align-items: grid-start;
+}
