@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    background-color:white;
+    width: 500px;
+    height: 800px;
+    border-style: dashed;
+    margin: 100px;
+    flex-direction: column;
+
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.item {
+    margin: 15px;
+    flex-basis: 200px;
+    width: 200px;
+    height: 2o0px;
+    border-radius: 20px;
+}
+
+.flexbox1 {
+    background-color: rgb(174, 133, 211);
+
+
+}
+
+.flexbox2 {
+    background-color: rgb(234, 163, 115);
+
+
+}
+
+.flexbox3 {
+    background-color:  rgb(234, 163, 115);
+}
+
+.flexbox4 {
+    background-color:rgb(174, 133, 211);
+
+}
+
+.flexbox5 {
+    background-color: rgb(174, 133, 211);
+
+}
+
+.flexbox6 {
+    background-color: rgb(234, 163, 115);
+
+}
