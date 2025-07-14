@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+.content {
+    margin: 10px;
+    width: 100vw;
+    height: 50vh;
+    background-color: rgb(216, 136, 39);
+
+}
+
+#h1-text {
+    display: inline-block;
+    padding: 2px 0px 10px 10px;
+    transition: all 10s ease;
+    transform: translateX(0);
+    
+
+}
+
+h1:hover {
+     animation: slide 10s ease;
+       transform: translateX(-10px) scale(1.1);
+  
+    background-color: burlywood;
+}
+
+#p-text {
+    padding: 50px;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0) ;
+        }
+
+    100% {
+        transform: translateX(50vw);
+    }
+}
